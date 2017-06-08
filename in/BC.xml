@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--#Boundary conditions: the same total number of scenarios should be prescribed for soil, xylem and cells
+                          The first scenario is currently "forced" as it is used to calculate the kr and STF intrinsic properties-->
+<properties>
+	<!-- Soil water potentials
+	     Units: hPa
+	     -->
+	<Psi_soil_range>
+	   <Psi_soil pressure="0.0"     osmotic="0.0"   />
+	   <Psi_soil pressure="-1.0E2"  osmotic="-2.0E2"/>
+	</Psi_soil_range>
+	
+	<!-- Xylem water potentials
+	     Units: hPa
+	     -1.5E3 osmotic: Reference treatment (Enns et al., 2000)
+	     -2.2E3 osmotic: KNO3 treatment to help guttation (Enns et al., 2000)
+	     The xylem osmotic potential propagates throughout stelar walls -->
+	<Psi_xyl_range>
+	   <Psi_xyl pressure="-5.0E3"   osmotic="0.0"   />
+	   <Psi_xyl pressure="-3.4E3"   osmotic="-1.8E3"/>
+	</Psi_xyl_range>
+	
+	<!-- Cellular protoplasts osmotic potentials
+	     Units: hPa
+	     Os_cortex is the cortical cell osmotic potential
+	     -8.0E3: Reference treatment (Enns et al., 2000)
+	     -1.26E4: KNO3 treatment to help guttation (Enns et al., 2000)
+	   & Reflection coefficients
+             s_factor  (unitless)
+             0->1: multiplies all reflection coefficients -->
+	<Psi_cell_range>
+	   <Psi_cell Os_cortex="-7.0E3" s_factor="1.0"/>
+	   <Psi_cell Os_cortex="-7.0E3" s_factor="1.0"/>
+	</Psi_cell_range>
+</properties>
+
+

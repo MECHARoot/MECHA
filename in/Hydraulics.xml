@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hydraulic options -->
+
+<param>
+        <!-- Path to the folders of different hydraulic scenarios -->
+        <path_hydraulics>
+            <Output path='default/'/> <!-- hydraulic conductivity of standard walls -->
+        </path_hydraulics>
+        <!-- Cell wall hydraulic conductivity
+             Review in Transport in plants II: Part B Tissues and Organs, A. Lauchli: 1. Apoplasmic transport in tissues
+             Units: cm^2/hPa/d
+             6.6E-03: Soybean hypocotyl Steudle and Boyer (1985)
+             1.2E-05: Nitella cell Tyree (1968)
+             6.0E-06: Nitella cell walls Zimmermann and Steudle (1975)
+             1.3E-7:  Cellulose wall Briggs (1967) for thickness of 1.5 micron
+             1.8E-9:  Maize root cell wall Tyree (1973) for thickness of 1.5 micron -->
+        <kwrange>
+            <kw value="6.6E-03" /> <!-- hydraulic conductivity of standard walls -->
+        </kwrange>
+        <kw_barrier_range> <!-- hydraulic conductivity of suberised and lignified walls -->
+            <kw_barrier value="2.00E-14" />
+        </kw_barrier_range>
+        
+        <!-- Cell membrane permeability, with separate contribution of the biphospholipid layer (km) and AQP (kAQP)
+             Units: cm/hPa/d
+             6.8E-5 to 1.9E-4: Lp Steudle and Jeschke (1983)
+             4.3E-4: kAQP Elhert et al. (2009), difference in maize cell hydraulic conductivity between control and acid-treated cells (AQP closed)
+             3.0E-5: km after removal of kAQP and kpl from Elhert et al. (2009) and Bret-Hart and Silk (1994)-->
+        <km value="3.0E-5" />
+        <kAQPrange>
+            <kAQP value="4.3E-4" />
+        </kAQPrange>
+        
+        <!-- Individual plasmodesma conductance and plasmodesmatal frequency
+             Kpl Units: cm^3/hPa/d/plasmodesmata
+             5.3E-12: Geometrical average from Bret-Hart and Silk (1994)
+             3.1E-11: Estimation from Ginsburg & Ginzburg (1970)
+             
+             Frequency*height is the conserved quantity when height changes (default height in measured tissue assumed to be 200 microns)
+             Measurements reported below come from elongated maize cell (~200 microns)
+             Fpl by height Units: plasodesmata*cm/cm^2
+             8.0E5: Default average (0.4/micron^2 * 200 microns)
+             1.08E6: height * Plasmodesmal frequency between epidermis and exodermis from Clarkson et al. (1987)
+             2.28E6: height * Plasmodesmal frequency between exodermis and cortex from Clarkson et al. (1987)
+             8.6E5: height * Plasmodesmal frequency between cortex and cortex from Warmbrodt (1985b)
+             8.8E5: height * Plasmodesmal frequency between cortex and endodermis from Warmbrodt (1985b)
+             6.4E5: height * Plasmodesmal frequency between endodermis and endodermis from Warmbrodt (1985b)
+             9.6E5: height * Plasmodesmal frequency between endodermis and pericycle from Warmbrodt (1985b)
+             7.0E5: height * Plasmodesmal frequency between pericycle and pericycle from Warmbrodt (1985b)
+             1.08E6: height * Plasmodesmal frequency between pericycle and stele from Warmbrodt (1985b)
+             6.4E5: height * Plasmodesmal frequency between stele and stele (parenchyma) from Warmbrodt (1985b) -->
+        <Kplrange>
+            <Kpl value="5.3E-12"/> <!-- 5.3E-12 -->
+        </Kplrange>
+        <Fplxheight value="8.0E5"/> <!-- Default height * plasmodesmatal frequency -->
+        <Fplxheight_epi_exo value="1.08E6"/> 
+        <Fplxheight_outer_cortex value="2.28E6"/>
+        <Fplxheight_cortex_cortex value="8.6E5"/>
+        <Fplxheight_cortex_endo value="8.8E5"/>
+        <Fplxheight_endo_endo value="6.4E5"/>
+        <Fplxheight_endo_peri value="9.6E5"/>
+        <Fplxheight_peri_peri value="7.0E5"/>
+        <Fplxheight_peri_stele value="1.08E6"/>
+        <Fplxheight_stele_stele value="6.4E5"/>
+        
+</param>

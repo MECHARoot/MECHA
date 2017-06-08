@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--#General options-->
+
+<properties>
+	<!-- OS -->
+	<OS value='Windows'/> <!-- The current version seems fully compatible for both Mac and Windows -->
+	
+	<!-- Main output folder -->
+	<Output path='out/PearlMillet2/'/> <!-- Path to output file folders, no"&" sign allowed in the folder name -->
+		
+	<!-- Paraview outputs? -->
+	<Paraview value="1" WallFlux="1" MembraneFlux="1" PlasmodesmataFlux="1" WallPot="1" CellPot="1"/> <!-- 0:No paraview outputs saved, 1:Saving paraview outputs -->
+        
+        <!-- Paraview display options -->
+	<color_threshold value="0.8"/> <!-- Values above 80% of maximum all saturate -->
+	<thickness_disp value="2.5"/> <!-- (micrometers) Double cell wall thickness at wall nodes -->
+	<thicknessJunction_disp value="5.0"/> <!-- (micrometers) Double cell wall thickness at wall junctions -->
+	<radiusPlasmodesm_disp value="4.0"/> <!-- (micrometers) Radius of plasmodesmata for display (not actual radius) -->
+</properties>

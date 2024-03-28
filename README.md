@@ -25,11 +25,25 @@ conda activate mecha_env
 
 ## Use
 
-Modify input files in Projects/<name_of_the_project>/in/
+MECHA uses four parameters files as input, stored in the /in folder in the Projects MECHA directory:
 
+Projects/<name_of_the_project>/in/
+
+General.xml : General simulation parameters
+BC.xml : Boundary conditions for the simulation. This is where you choose wether the soil is dry, wet, or only partially touch the root.
+Geometry.xml : Parameters for the root section geometry. This is where you define which root section to use in the simulation.
+Hydraulics.xml : Hydraulic parameters of the different variables in the simulation
+
+#### Run MECHA
 ```{bash}
 python MECHA.py
 ```
+
+OUPUT FILES
+MECHA output files in a folder defined in the General.xml input file, under the Output tag. Different type of files are generated:
+
+*.PVTK files : These are geometry files that can be open in Paraview
+Macro_prop_i.txt files : Theses files contain synthetic informations about the simulation results. They contain the radial data.
 
 ## Cite
 

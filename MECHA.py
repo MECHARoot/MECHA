@@ -4,7 +4,7 @@
 dir='./'
 
 #Project
-Project='Projects/Maize_default/' # 
+Project='Projects/Maize_granar/' # 
 
 inputs='in/'
 Gen='General.xml'

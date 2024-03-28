@@ -6,7 +6,6 @@ V [2.0](https://github.com/MECHARoot/MECHA/releases/tag/2.0)
 V [1.0](https://github.com/MECHARoot/MECHA/releases/tag/1.0)
 
 # MECHA
-MODEL OF EXPLICIT CROSS-SECTION HYDRAULIC ANATOMY
 
 ## Description
 

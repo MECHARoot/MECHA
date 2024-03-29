@@ -1,5 +1,5 @@
 
-V 2.1 
+V 2.1 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10893083.svg)](https://doi.org/10.5281/zenodo.10893083)
 
 V [2.0](https://github.com/MECHARoot/MECHA/releases/tag/2.0)
 

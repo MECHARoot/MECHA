@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: If you use this software in a scholarly work, please cite it as follows:
+title: Going with the Flow: Multiscale Insights into the Composite Nature of Water Transport in Roots
+doi: 10.1104/pp.18.01006
+authors:
+  - name: Couvreur, Valentin
+  - name: Faget, Marc
+  - name: Lobet, Guillaume
+  - name: Javaux, Mathieu
+  - name: Chaumont, François
+  - name: Draye, Xavier
+year: 2018
+month: 10
+publication: Plant Physiology
+volume: 178
+issue: 4
+pages: 1689-1703
+url: https://doi.org/10.1104/pp.18.01006

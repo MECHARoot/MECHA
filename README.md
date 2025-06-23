@@ -1,9 +1,14 @@
+**⚠️ A REFORGING OF MECHA IS UNDER DEVELOPMENT...**
 
-V 2.1 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10893083.svg)](https://doi.org/10.5281/zenodo.10893083)
+**⚠️ FOR COUPLING GRANAR AND MECHA, [SEE THIS REPOSITORY](https://github.com/granar/granar_examples)**
 
-V [2.0](https://github.com/MECHARoot/MECHA/releases/tag/2.0)
+**ARCHIVES :**
 
-V [1.0](https://github.com/MECHARoot/MECHA/releases/tag/1.0)
+  * V 2.1 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10893083.svg)](https://doi.org/10.5281/zenodo.10893083)
+
+  * V [2.0](https://github.com/MECHARoot/MECHA/releases/tag/2.0)
+
+  * V [1.0](https://github.com/MECHARoot/MECHA/releases/tag/1.0)
 
 # MECHA
 
